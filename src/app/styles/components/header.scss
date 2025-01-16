@@ -1,0 +1,110 @@
+.container_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  border: none;
+  height: 50px;
+
+  .titulo_logo {
+    a {
+      display: inline-block;
+
+      img {
+        width: 120px;
+      }
+    }
+  }
+
+  .menu_header {
+    ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      position: relative;
+      right: 10rem;
+
+      li {
+        margin-right: 2rem;
+        position: relative;
+
+        a {
+          text-decoration: none;
+          color: #3513f6;
+          font-size: 1rem;
+          display: flex;
+          align-items: center;
+
+          span {
+            margin-left: 0.3rem;
+            transform: rotate(90deg);
+            transition: transform 0.3s ease;
+            display: inline-block;
+          }
+        }
+
+        &:hover>a span {
+          transform: rotate(-85deg);
+        }
+
+        &:hover .list_menu_recursos,
+        .list_menu_recursos:hover {
+          display: block;
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .list_menu_recursos {
+        display: none;
+        position: absolute;
+        border-top: 2px solid #5e01ff;
+        top: 150%;
+        width: 280px;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        list-style: none;
+        padding: 1rem 0;
+        text-align: center;
+        margin: 0;
+        opacity: 0;
+        transform: translateY(-10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+
+        li {
+          padding: 0.5rem 3rem;
+
+          a {
+            color: #000000;
+            text-decoration: none;
+            width: 200px;
+
+            &:hover {
+              color: #007bff;
+            }
+          }
+        }
+      }
+
+      .seta_menu {
+        font-size: 15px;
+        font-weight: 700;
+      }
+
+      .button_header {
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        border: none;
+        background-color: #32ce8f;
+        font-size: 16px;
+        font-weight: 400;
+        color: white;
+      }
+    }
+  }
+}
