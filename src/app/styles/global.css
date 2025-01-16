@@ -1,0 +1,120 @@
+/*Estilos Globais*/
+@import './components/conheca.css';
+@import './components/header.css';
+@import './components/home.css';
+@import './components/login.css';
+@import './components/planos.css';
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.container_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  border: none;
+  height: 50px;
+}
+.container_header .titulo_logo a {
+  display: inline-block;
+}
+.container_header .titulo_logo a img {
+  width: 120px;
+}
+.container_header .menu_header ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  right: 10rem;
+}
+.container_header .menu_header ul li {
+  margin-right: 2rem;
+  position: relative;
+}
+.container_header .menu_header ul li a {
+  text-decoration: none;
+  color: #3513f6;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+.container_header .menu_header ul li a span {
+  margin-left: 0.3rem;
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+.container_header .menu_header ul li:hover > a span {
+  transform: rotate(-85deg);
+}
+.container_header .menu_header ul li:hover .list_menu_recursos,
+.container_header .menu_header ul li .list_menu_recursos:hover {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+.container_header .menu_header ul .list_menu_recursos {
+  display: none;
+  position: absolute;
+  border-top: 2px solid #5e01ff;
+  top: 150%;
+  width: 280px;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 1rem 0;
+  text-align: center;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.container_header .menu_header ul .list_menu_recursos li {
+  padding: 0.5rem 3rem;
+}
+.container_header .menu_header ul .list_menu_recursos li a {
+  color: #000000;
+  text-decoration: none;
+  width: 200px;
+}
+.container_header .menu_header ul .list_menu_recursos li a:hover {
+  color: #007bff;
+}
+.container_header .menu_header ul .seta_menu {
+  font-size: 15px;
+  font-weight: 700;
+}
+.container_header .menu_header ul .button_header {
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #32ce8f;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+/*Fontes importadas google fontes*/
+/* font-family: "Montserrat", serif; */
+body, html {
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+button {
+  cursor: pointer !important;
+}
+
+li, ul, ol {
+  list-style: none !important;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=global.css.map */
