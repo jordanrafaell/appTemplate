@@ -37,7 +37,8 @@
   margin-left: 0.3rem;
   transform: rotate(90deg);
   transition: transform 0.3s ease;
-  display: inline-block;
+  display: block;
+  font-size: 30px;
 }
 .container_header .menu_header ul li:hover > a span {
   transform: rotate(-85deg);
@@ -52,11 +53,11 @@
   display: none;
   position: absolute;
   border-top: 2px solid #5e01ff;
-  top: 150%;
+  top: 20px;
   width: 280px;
   left: 0;
   background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.461);
   list-style: none;
   padding: 1rem 0;
   text-align: center;
@@ -64,6 +65,7 @@
   opacity: 0;
   transform: translateY(-10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
+  border-radius: 5px;
 }
 .container_header .menu_header ul .list_menu_recursos li {
   padding: 0.5rem 3rem;
