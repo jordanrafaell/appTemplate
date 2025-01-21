@@ -1,0 +1,82 @@
+.Container_banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.Container_banner .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+.Container_banner .banner .imagemCell {
+  width: 100%;
+  height: 100%;
+}
+.Container_banner .banner .imagemCell img {
+  width: 750px;
+  height: 750px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Container_banner .banner .textBanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.Container_banner .banner .textBanner h2 {
+  width: 700px;
+  font-size: 80px;
+}
+.Container_banner .banner .textBanner p {
+  width: 600px;
+  height: 65px;
+  font-size: 20px;
+  color: #7c8087;
+  padding-top: 10px;
+}
+.Container_banner .banner .textBanner button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 200px;
+  height: 30px;
+  background-color: #51d5a0;
+  border-radius: 5px;
+  padding: 30px;
+  border: none;
+}
+.Container_banner .banner .textBanner button a {
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+}/*# sourceMappingURL=home.css.map */
