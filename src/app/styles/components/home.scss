@@ -7,38 +7,44 @@
 
   .banner {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
     height: 100%;
+    margin: 0 auto;
 
     .imagemCell {
-      width: 100%;
-      height: 100%;
+      display: flex;
+      width: 700px;
+      justify-content: center;
+      align-items: center;
 
       img {
-        width: 750px;
-        height: 750px;
-        object-fit: cover;
+        width: 100%;
       }
+
     }
 
 
     .textBanner {
       display: flex;
-      width: 100%;
+      width: 700px;
       flex-direction: column;
       justify-content: center;
       align-items: start;
 
       h2 {
-        width: 700px;
-        font-size: 80px;
+        max-width: 700px;
+        font-size: clamp(20px, 10vw, 80px);
       }
 
       p {
-        width: 600px;
+        width: 100%;
+        max-width: 600px;
         height: 65px;
-        font-size: 20px;
+        font-size: clamp(1.2rem, 2vw, 1.5rem);
         color: #7c8087;
         padding-top: 10px;
       }
@@ -53,11 +59,28 @@
         border-radius: 5px;
         padding: 30px;
         border: none;
-        
-        a{
+
+        a {
           font-weight: 400;
           font-size: 18px;
           color: white;
+        }
+      }
+
+      @media (max-width: 1000px) and (min-width: 768px) {
+        .textBanner {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      @media (max-width: 768px) and (min-width: 100px) {
+        .textBanner {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
         }
       }
     }
