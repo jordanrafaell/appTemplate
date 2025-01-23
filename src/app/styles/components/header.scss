@@ -150,10 +150,14 @@
     height: 50px !important;
     border: 1px solid #868686 !important;
     position: relative;
-    left: 15rem;
+    right: -15rem;
+    z-index: 2;
 
     .navbar-toggler-icon {
       background-color: black;
+      width: 90%;
+      height: 2px;
+      border-radius: 50px;
     }
   }
 
@@ -181,8 +185,7 @@
   }
 }
 
-
-@media (max-width: 768px) and (min-width: 100px) {
+@media (max-width: 768px) and (min-width: 468px) {
 
   /* Reduzir a largura do menu */
 
@@ -201,11 +204,113 @@
     max-width: 90px;
   }
 
+  .button_header {
+    display: block;
+    position: relative;
+    left: 6rem;
+    width: 90px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #32ce8f;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+  }
+
   .navbar-toggler {
     display: block !important;
+    width: 50px !important;
+    height: 50px !important;
+    border: 1px solid #868686 !important;
+    position: relative;
+    right: -20rem;
+    z-index: 2;
+
+    .navbar-toggler-icon {
+      background-color: black;
+      width: 90%;
+      height: 2px;
+      border-radius: 50px;
+    }
+  }
+
+  .navbar-nav {
+    display: flex;
+    position: relative;
+    left: -1px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+} 
+
+@media (max-width: 468px) and (min-width: 100px) {
+
+  /* Reduzir a largura do menu */
+
+  .menu_header {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+  .list_menu_principal {
+    display: none !important;
+  }
+
+  .titulo_logo img {
+    width: 100%;
+    max-width: 90px;
+  }
+
+  .button_header {
+    display: block;
+    position: relative;
+    width: 90px;
+    left: -2.5rem;
+    bottom: 25px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #32ce8f;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+  }
+
+  .navbar-toggler {
+    display: block !important;
+    width: 100%;
+    max-width: 50px !important;
+    height: 50px !important;
+    border: 2px solid #000000 !important;
+    border-radius: 5px;
+    position: relative;
+    left: 4rem;
+    top: 25px;
+    z-index: 2;
+
+    .navbar-toggler-icon {
+      background-color: black;
+      width: 65%;
+      height: 1px;
+      border-radius: 50px;
+    }
+  }
+
+  .navbar-nav {
+    display: flex;
+    position: relative;
+    left: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
 }
+
 
 .navbar-toggler {
   display: none;
